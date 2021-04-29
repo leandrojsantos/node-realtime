@@ -1,36 +1,51 @@
 <h1 align="center">
-    <a href="#" alt="">Node webSocket.io</a>
+  <a href="#" alt="">Node + Socket.io</a>
 </h1>
-
+<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
+<img alt="mern" title="#mern" src="./public/img/socket1.png" width="400px">
+ 
 <h4 align="center">
-	🚧   Em produção 🚀 🚧
+🚧Concluído 🚀🚧
 </h4>
-
+ 
 Tabela de conteúdos
 =================
 <!--ts-->
-   * [Sobre o projeto](#-sobre-o-projeto)
-   * [Funcionalidades](#-funcionalidades)
-   * [Layout](#-layout)
-     * [Web](#web)
-   * [Como executar o projeto](#-como-executar-o-projeto)
-     * [Pré-requisitos](#pré-requisitos)
-     * [Rodando o Backend (servidor)](#user-content--rodando-o-backend-servidor)
-     * [Rodando a aplicação web (Frontend)](#user-content--rodando-a-aplicação-web-frontend)
-   * [Tecnologias](#-tecnologias)
-   
+ * [Sobre o projeto](#-sobre-o-projeto)
+ * [Funcionalidades](#-funcionalidades)
+ * [Layout](#-layout)
+ * [Como executar o projeto](#-como-executar-o-projeto)
+   * [Pré-requisitos](#pré-requisitos)
+   * [Rodando o Projeto](#user-content--rodando-o-backend-servidor)
+ * [Tecnologias](#-tecnologias)
+ 
 <!--te-->
-
-
+ 
 ## 💻 Sobre o projeto
+ 
+Projeto baseado no vídeo da [rocketseat](https://rocketseat.com.br), onde fala em qual situação se deve, ou não utilizar o real time segue o vídeo [Node para APIs em real time? - #PR​ 35](https://www.youtube.com/watch?v=HrkECIzaQvE).
+ 
+### Para esse processo ele usa o [soket.io](https://socket.io/). Mas o que é ?
+ 
+Socket.IO é uma biblioteca, para aplicativos da web em tempo real. 
 
-Projeto desenvolvido durante....
-
+Permite comunicação bidirecional em tempo real entre clientes e servidores da Web.
+Ele tem duas partes: uma biblioteca do lado do cliente que é executada no navegador e uma biblioteca do lado do servidor para o Node.js.
+ 
+<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
+<img alt="mern" title="#mern" src="./public/img/socket2.png" width="400px">
+ 
+<img alt="mern" title="#mern" src="./public/img/socket3.png" width="400px">
+</p>
+ 
 ---
-
+ 
 ## ⚙️ Funcionalidades
 
-- [x]....
+- [x] Comunicação em tempo real entre, clientes e servidores.
+- [x] Fornece automaticamente id único para clientes e servidores.
+- [x] Facilmente recarrega, por exemplo queda de energia
+- [x] Não faz requisição além, do necessário
 
 ---
 
@@ -38,74 +53,59 @@ Projeto desenvolvido durante....
 
 O layout da aplicação:
 
-### Web
+<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
+<img alt="mern" title="#mern" src="./public/img/s4.png" width="400px">
+</p>
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="node-serverless" title="#node-serverless" src="./assets/web.svg" width="400px">
+<img alt="mern" title="#mern" src="./public/img/s5.png" width="400px">
 
-  <img alt="node-serverless" title="#node-serverless" src="./assets/sucesso-web.svg" width="400px">
+<img alt="mern" title="#mern" src="./public/img/s6.png" width="400px">
 </p>
 
 ---
 
 ## 🚀 Como executar o projeto
-
+ 
 ### Pré-requisitos
-
+ 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
-[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). 
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/).
+ 
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
-
-#### 🎲 Rodando o Backend (servidor)
-
+ 
+#### 🎲 Rodando o projeto
 ```bash
 # Clone este repositório
-$ git clone 
-
+$ git clone git@github.com:leandrojsantos/node-realtime.git
 # Acesse a pasta do projeto no terminal/cmd
-$ cd 
-
-# Vá para a pasta server
-$ cd 
-
+$ cd node-realtime
 # Instale as dependências
-$ npm install
+$ yarn
+# Caso não tenha gerado a tsconfig.json
+$ yarn tsc --init
+#######
 
-# Execute a aplicação em modo de desenvolvimento
-$ npm run dev:server
-
-# O servidor inciará na porta:3333 - acesse http://localhost:3333 
-
+# Na raiz do projeto e use comando
+$ yarn start
+# O Projeto dará start na porta localhost:3333
 ```
-
-
-#### 🧭 Rodando a aplicação web (Frontend)
-
-```bash
-# Clone este repositório
-$ git clone 
-
-# Acesse a pasta do projeto no seu terminal/cmd
-$ cd 
-
-# Vá para a pasta da aplicação Front End
-$ cd 
-
-# Instale as dependências
-$ npm install
-
-# Execute a aplicação em modo de desenvolvimento
-$ npm run start
-
-# A aplicação será aberta na porta:3000 - acesse http://localhost:3000
-
-```
-
----
-
 ## 🛠 Tecnologias
-
 As seguintes ferramentas foram usadas na construção do projeto:
-
-**Server**  
-([NodeJS](https://nodejs.org/en/)  +  [TypeScript](https://www.typescriptlang.org/))
+* [Express](https://expressjs.com/pt-br/)
+* [Node.js](https://nodejs.org/en/)
+* [Soket.io](https://socket.io/)
+* [Typescript](https://www.typescriptlang.org/)
+ 
+### Na parte do Server/Client:
+```bash
+  "dependencies": {
+   "express": # biblioteca para restfull
+   "socket.io": # biblioteca para comunicação em tempo real
+   "tsc": # biblioteca para 'reload autimatic' no typescript
+ },
+ "devDependencies": {
+   "@types/express": # biblioteca do typescript
+   "ts-node-dev": # biblioteca do typescript
+   "typescript": # biblioteca do typescript
+ }
