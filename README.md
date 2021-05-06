@@ -15,8 +15,6 @@ Tabela de conteúdos
  * [Funcionalidades](#-funcionalidades)
  * [Layout](#-layout)
  * [Como executar o projeto](#-como-executar-o-projeto)
-   * [Pré-requisitos](#pré-requisitos)
-   * [Rodando o Projeto](#user-content--rodando-o-backend-servidor)
  * [Tecnologias](#-tecnologias)
  
 <!--te-->
