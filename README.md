@@ -12,7 +12,6 @@ Tabela de conteúdos
 =================
 <!--ts-->
  * [Sobre o projeto](#-sobre-o-projeto)
- * [Funcionalidades](#-funcionalidades)
  * [Layout](#-layout)
  * [Como executar o projeto](#-como-executar-o-projeto)
  * [Tecnologias](#-tecnologias)
@@ -36,9 +35,8 @@ Ele tem duas partes: uma biblioteca do lado do cliente que é executada no naveg
 <img alt="mern" title="#mern" src="./public/img/socket3.png" width="400px">
 </p>
  
----
  
-## ⚙️ Funcionalidades
+#### ⚙️ Funcionalidades
 
 - [x] Comunicação em tempo real entre, clientes e servidores.
 - [x] Fornece automaticamente id único para clientes e servidores.
@@ -57,7 +55,9 @@ O layout da aplicação:
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
 <img alt="mern" title="#mern" src="./public/img/s5.png" width="400px">
+</p>
 
+<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
 <img alt="mern" title="#mern" src="./public/img/s6.png" width="400px">
 </p>
 
@@ -90,10 +90,10 @@ $ yarn start
 ```
 ## 🛠 Tecnologias
 As seguintes ferramentas foram usadas na construção do projeto:
-* [Express](https://expressjs.com/pt-br/)
-* [Node.js](https://nodejs.org/en/)
-* [Soket.io](https://socket.io/)
-* [Typescript](https://www.typescriptlang.org/)
+* [Express](https://expressjs.com/pt-br/) para o servidor
+* [Node.js](https://nodejs.org/en/) para o desenvolvimento
+* [Soket.io](https://socket.io/) para o real time
+* [Typescript](https://www.typescriptlang.org/) para o desenvolvimento
  
 ### Na parte do Server/Client:
 ```bash
