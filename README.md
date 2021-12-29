@@ -82,11 +82,13 @@ $ cd node-realtime
 $ yarn
 # Caso não tenha gerado a tsconfig.json
 $ yarn tsc --init
-#######
 
-# Na raiz do projeto e use comando
+
+# Na raiz do projeto e use comando para rodar o servidor
 $ yarn start
-# O Projeto dará start na porta localhost:3333
+
+# O start é na porta localhost:3333
+
 ```
 ## 🛠 Tecnologias
 As seguintes ferramentas foram usadas na construção do projeto:
